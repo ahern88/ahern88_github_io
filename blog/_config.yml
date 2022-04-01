@@ -45,15 +45,15 @@ relative_link: false
 future: true
 
 highlight:
-  enable: false
+  enable: true
   line_number: false
   auto_detect: false
   tab_replace: ''
   wrap: true
-  hljs: false
+  hljs: true
 
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: false
   tab_replace: ''
@@ -116,7 +116,7 @@ aomori_logo_typed_animated: true
 aomori_menu:
   首页: /
   文章: /archives
-  收藏: /collection
+#  收藏: /collection
   关于我: /aboutme
 
 # 评论模块
@@ -125,12 +125,13 @@ aomori_giscus:
   repo: 'ahern88/giscus_repo'
   repoId: 'R_kgDOHGTAUg'
   category: 'Announcements'
-  categoryId: 10
+  categoryId: 'DIC_kwDOHGTAUs4COWxa'
   mapping: "pathname"
   reactionsEnabled: 1
   emitMetadata: 0
   theme: 'light'
   lang: 'zh-CN'
+  inputPosition: 'top'
 
 # 搜索模块
 algolia:
@@ -138,6 +139,9 @@ algolia:
   apiKey: '4eaf4c93378e153e99394f6d0baecf21'
   indexName: 'post_index'
 aomori_search_algolia: true
+
+# 百度统计
+aomori_baidu_analytics: 'f6e09ac3389fb861bbfa7bbceb2a5698'
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
