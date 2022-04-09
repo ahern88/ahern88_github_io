@@ -22,6 +22,4 @@ typora-root-url: ../../source
 
 对本站的任何问题可以在文章后面留言给我（需要Github登陆）
 
-也可以通过邮箱 ahern88@163.com 或微信联系我（广告推销的勿扰，谢谢）
-
-<img src="/images/index/image-20220401005713496.png" alt="image-20220401005713496" style="zoom:25%;" />
+也可以通过邮箱 ahern88@163.com 联系我（广告推销的勿扰，谢谢）
