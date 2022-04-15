@@ -13,6 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+favicon: ./images/favicon.ico
 url: https://ahern88.github.io
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -118,6 +119,17 @@ aomori_menu:
   文章: /archives
 #  收藏: /collection
   关于我: /aboutme
+
+# 社交媒体
+aomori_social:
+  -
+    icon: github
+    type: logo 
+    url: https://www.github.com/ahern88
+  -
+    icon: twitter 
+    type: logo 
+    url: https://twitter.com/ailinxi2015
 
 # 评论模块
 aomori_giscus:

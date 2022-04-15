@@ -47,6 +47,8 @@ INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.
 
 在浏览器中打开 http://localhost:4000/ 就能看到默认页面了，不过可能你也发现了默认页面的主题样式并不是你喜欢的，下面我们看如何更换和安装主题。
 
+<!--more-->
+
 ### 安装主题
 
 hexo内置了默认的主题，如果想更换主题，首先点击这里查看[所有主题](https://hexo.io/themes/ )，找到所需主题的源代码或压缩包解压到themes下完成安装
@@ -260,7 +262,15 @@ Branch 'master' set up to track remote branch 'master' from 'git@github.com:aher
 
 这样你的博文就发布上去了，发布完成后会有2分钟左右的缓存，等过几分钟刷新查看效果。
 
+## 其他技巧
 
+### 首页文章如何分段
+
+只需要在文章内容中增加```<!--more-->```代码片段就能在首页不显示后面的内容，这个是hexo定义的，与主题无关。
+
+### 新增favicon图标
+
+将favicon.ico文件放入 source/images/ 文件夹下，然后在 _config.yaml中增加 ```favicon: images/favicon.ico``` 即可
 
 ### 参考资料
 
