@@ -61,7 +61,7 @@ img:not([src]):not([srcset]) {
 /* Container */
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 0 20px;
 }
 
@@ -278,7 +278,7 @@ img:not([src]):not([srcset]) {
 
 .sidebar {
     position: fixed;
-    right: calc((100% - 1160px) / 2);
+    right: calc((100% - 1370px) / 2);
     top: 120px;
     transition: all 0.2s;
     width: 280px;
@@ -995,7 +995,7 @@ img:not([src]):not([srcset]) {
     }
 
     &-inner {
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
         padding: 0 20px 50px;
         color: var(--color-white);

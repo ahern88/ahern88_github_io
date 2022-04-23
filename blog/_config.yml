@@ -108,7 +108,7 @@ aomori_widgets:
   - category
   - tag
   - recent_posts
-#  - archive
+  - archive
 
 # 标题动画
 aomori_logo_typed_animated: true
