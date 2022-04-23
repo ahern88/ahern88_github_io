@@ -9,8 +9,6 @@ categories:
 typora-root-url: ../../source
 ---
 
-## 从零开始使用GitHub+Hexo搭建个人博客
-
 通过本文你能完成自己的个人博客搭建（无需个人主机、个人域名，免费），你的博客将拥有如下功能
 
 - 分类功能
@@ -20,7 +18,9 @@ typora-root-url: ../../source
 - 数据分析
 - 博文发布
 
-### 安装Hexo
+------
+
+## 0. 安装Hexo
 
 提前先安装node，node中包含npm工具，具体安装node这里不做描述
 
@@ -49,7 +49,9 @@ INFO  Hexo is running at http://localhost:4000/ . Press Ctrl+C to stop.
 
 <!--more-->
 
-### 安装主题
+------
+
+## 1. 安装主题
 
 hexo内置了默认的主题，如果想更换主题，首先点击这里查看[所有主题](https://hexo.io/themes/ )，找到所需主题的源代码或压缩包解压到themes下完成安装
 
@@ -69,7 +71,9 @@ theme: hexo-theme-aomori
 
 完成主题安装后，通过`hexo server`重启服务查看效果
 
-### 搜索功能
+------
+
+## 2. 搜索功能
 
 搜索功能需要借助第三方商业公司algolia的search产品，数据量小搜索量不大个人项目够用，先上algolia注册个人账号
 
@@ -107,7 +111,7 @@ INFO  [hexo-algolia] Indexing done.
 
 这样搜索功能就安装好了~![image-20220401224102914](/images/index/image-20220401224102914.png)
 
-### 评论功能
+## 3. 评论功能
 
 评论功能采用[giscus](https://giscus.app/)，这是一个天才项目，数据源存储在github（什么鬼），对github里针对项目有一个discussions的功能，giscus完全基于它来实现。
 
@@ -154,7 +158,9 @@ aomori_giscus:
 </script>
 ```
 
-### 统计分析
+------
+
+## 4. 统计分析
 
 使用[百度统计](https://tongji.baidu.com/)，能帮助你将站点做的更好，让你更了解站点的流量情况。
 
@@ -171,7 +177,9 @@ aomori_baidu_analytics: 'f6e09ac3389fb861bbfa7bbceb2a5698'
 
 到这里，统计模块就已完成，上线后查看统计分析信息
 
-### 写博客推荐的工具与问题
+------
+
+## 5. 写博客推荐的工具与问题
 
 如何方便的做图片维护与管理？
 
@@ -192,7 +200,9 @@ $ mkdir images
 
 这样，直接从剪贴板粘贴过来的图片会自动生成到images文件夹中，而images文件夹会被hexo打包至web项目的根目录下，通过/images/xxx.png就能直接访问到，非常完美。
 
-### 发布博文
+------
+
+## 6. 发布博文
 
 最好将博客的源文件存放在github上维护，这样每一步操作都有记录，而且数据不会丢，先在github中创建ahern88_github_io项目
 
@@ -262,17 +272,21 @@ Branch 'master' set up to track remote branch 'master' from 'git@github.com:aher
 
 这样你的博文就发布上去了，发布完成后会有2分钟左右的缓存，等过几分钟刷新查看效果。
 
-## 其他技巧
+------
 
-### 首页文章如何分段
+## 7. 其他技巧
+
+### 7.1 首页文章如何分段
 
 只需要在文章内容中增加```<!--more-->```代码片段就能在首页不显示后面的内容，这个是hexo定义的，与主题无关。
 
-### 新增favicon图标
+### 7.2 新增favicon图标
 
 将favicon.ico文件放入 source/images/ 文件夹下，然后在 _config.yaml中增加 ```favicon: images/favicon.ico``` 即可
 
-### 参考资料
+------
+
+## 8. 参考资料
 
 - Hexo官方网站 https://hexo.io/zh-cn/
 - Giscus官方站点 https://giscus.app/zh-CN

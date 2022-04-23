@@ -9,7 +9,7 @@ tags:
   - GDB
 ---
 
-## 编写C程序
+## 1. 编写C程序
 
 编写一段简单的C程序 main.c ，并做好验证
 
@@ -35,9 +35,9 @@ hello world
 
 <!--more-->
 
-## 如何调试
+## 2. 如何调试
 
-### 先安装GDB
+### 2. 1先安装GDB
 
 ```bash
 $ brew install gdb
@@ -65,7 +65,7 @@ Type "apropos word" to search for commands related to "word".
 (gdb) 
 ```
 
-### 开始调试
+### 2. 2开始调试
 
 在c程序的目录下，执行如下命令进入gdb调试界面
 
@@ -118,7 +118,7 @@ Num     Type           Disp Enb Address            What
 
 上面能完成基本的调试操作，可以尝试着自己做一做
 
-## 遇到的问题
+## 3. 遇到的问题
 
 在使用gdb的过程中我遇到了几个问题
 
@@ -137,7 +137,7 @@ $ echo "set startup-with-shell off" > ~/.gdbinit
 
 > 记住修改完 .gdbinit 文件后一定要关闭term窗口后重新打开，不然会没有效果
 
-## 参考资料
+## 4. 参考资料
 
 - [(gdb) 8.3.1 hangs after run command on mac Catalina #49631](https://github.com/Homebrew/homebrew-core/issues/49631)
 
